@@ -1,0 +1,2 @@
+# Array_MaxTree
+给定一个没有重复元素的数组A，定义A上的MaxTree如下：MaxTree的根节点为A中最大的数，根节点的左子树为数组中最大数左边部分的MaxTree，右子树为数组中最大数右边部分的MaxTree。请根据给定的数组A，设计一个算法构造这个数组的MaxTree。
