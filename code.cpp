@@ -14,7 +14,7 @@ void getFirstBigNumber(stack<Node*> &sta, map<Node*,Node*> mp)
 {
   Node* popVlaue = sta.top();
   sta.pop();
-  if(!sta.empty())
+  if(sta.empty())
     mp[popValue] = NULL;
   else
     mp[popValue] = sta.top();
@@ -68,7 +68,7 @@ Node* getMaxtree(vector<int> A)
       if(noderight->left == NULL)
         noderight->left = current;
       else
-        nodeleft->left = current;
+        noderight->right = current;
     }
     else if(noderight == NULL)
     {
